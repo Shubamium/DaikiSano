@@ -1,0 +1,112 @@
+/* Google Fonts
+    Sora (Header)
+    Montserrat (Paragraph)
+    Inter (Alternate)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Sora:wght@100;300;400;500;700;800&display=swap');
+
+/* CSS Reset */
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  
+  /* Default Font */
+  font-family: var(--mainFont);
+}
+
+body{
+    background-color: var(--darkAccent);
+}
+
+/* Variables */
+:root{
+
+    /* Fonts */
+    --mainFont: 'Sora', sans-serif;
+    --secondaryFont: 'Montserrat', sans-serif;
+    --altFont: 'Inter', sans-serif;
+
+    /* Colors */
+    --black: #2f2f2f;
+    --darkAccent: #3c3830;
+    --darkerAccent: #32342c;
+    --accent: #999543;
+}
+
+
+/* General Styling */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type:none;
+}
+
+h1{
+    font-size: clamp(1vh, 5rem, 5.5rem);
+    color:var(--black);
+}
+
+.heading, .sub-heading{
+    color:white;
+    line-height: 90%;
+}
+
+.heading{
+    font-size: clamp(40px, 3rem , 5rem);
+}
+
+.sub-heading{
+    font-size: clamp(40px, 2.5rem , 4rem);
+}
+
+.paragraph{
+    font-size: clamp(10px, 1rem, 70px);
+    font-family: var(--secondaryFont);
+    color: rgb(204, 204, 204);
+    
+    line-height: calc(120% + 2px);
+    margin-bottom: 10px;
+}
+
+.section-number{
+    color:transparent;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 4px var(--black);
+
+    font-weight: 900;
+    font-family: var(--secondaryFont);
+    font-size: clamp(20px, 1.7rem, 70px);
+
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.btn{
+    border: none;
+    border-radius: 1vmin;
+
+    font-family: var(--mainFont);
+    font-size: clamp(16px, 1.4rem, 70px);
+    font-weight: bold;
+    color: var(--darkerAccent);
+    
+    background-color: var(--accent);
+    padding:10px 20px 10px;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.26);
+    transition: all 150ms ease;
+}
+
+.btn:active{
+    transform: scale(0.97);
+    transition: all 150ms ease;
+}
+.outline{
+    border: 2px solid white;
+}
