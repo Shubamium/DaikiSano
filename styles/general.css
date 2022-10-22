@@ -123,29 +123,35 @@ h1{
 /* Main Part */
 
 header{
-    background-color: #ffffff;   
+    background-color: #e7e7e7;   
     height: 470px;
     overflow: hidden;
 }
 
     .headframe{
-        background-color: white;
         width: min(1300px, 100%);
-        margin: 0 auto;
+        margin: 10px auto;
         height: 100%;
         display: grid;
-        grid-template-columns: 60% 1fr;
+        grid-template-columns: 55% 1fr;
 
         max-width: var(--maxWidth);
+
+        background: url('../images/decor/headerFrame.png');
+        background-size: 99%  450px;
+        background-repeat: no-repeat;
     }
 
         .headframe .left-side{
             /* background-color: blue; */
             overflow: visible;
+          
         }
 
-            .headframe .left-side {
-                transform: translate(-50px,10px);
+            .headframe .left-side image {
+                transform: translate(-80px,20px);
+                scale: 0.95;
+                display: block;
             } 
 
         .headframe .right-side{
