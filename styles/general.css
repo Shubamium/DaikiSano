@@ -41,6 +41,14 @@ body{
 /* General Styling */
 a{
     text-decoration: none;
+    color: var(--black);
+}
+
+a i:hover{
+    transform: translateX(-5px);
+    color: var(--accent);
+    transition: all 250ms ease;
+
 }
 
 li{
@@ -141,7 +149,7 @@ header{
         margin: 10px auto;
         height: 100%;
         display: grid;
-        grid-template-columns: 60% 1fr;
+        grid-template-columns: 50% 1fr;
 
         max-width: var(--maxWidth);
 
@@ -151,7 +159,11 @@ header{
         z-index: 100;
 
     }
-
+        
+        .headframe .btn{
+            border-radius: 0;
+        }
+        
         .headframe .left-side{
             /* background-color: blue; */
             overflow: visible;
@@ -185,7 +197,59 @@ header{
 
             .title-name{
                 position: relative;
+                
             }
+
+            .title-name h1{
+                font-size: 7rem;
+                text-indent: -7px;
+            }
+
+            .sub-name{
+                font-weight: bold;
+                font-family: var(--secondaryFont);
+                font-size: 1.2rem;
+                color: var(--darkAccent);
+
+                display: flex;
+                align-items: center;
+                position: relative;
+                /* background-color: green; */
+                width: 50%;
+            }
+            .sub-name p{
+            }
+            .sub-name .line{
+                border-bottom: 3px solid var(--darkerAccent);
+                width: 100px;
+            }
+
+                .socials{
+                    background-color: red;
+                    width: 100%;
+                }
+                .socials .gfx{
+                    transform: scale(1);
+                    position: absolute;
+                    top: 30px;
+                    left: 50% ;
+                }
+
+                .socials .icons{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    gap: 2px;
+                    position: absolute;
+                    top: 125%;
+                    right: -7%;
+
+                    font-size: 1.2rem;
+                }
+
+         
+
             .headframe .right-side .title-name h1:nth-child(2),
             .headframe .right-side .title-name h1:nth-child(3){
                     position: absolute;
@@ -226,3 +290,5 @@ header{
                 top: -30px;
                 right: 0%;
             }
+
+    
