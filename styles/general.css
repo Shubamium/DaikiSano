@@ -17,6 +17,7 @@
 
 body{
     background-color: var(--darkAccent);
+    min-height: 200vh;
 }
 
 /* Variables */
@@ -103,7 +104,7 @@ h1{
 
 .btn:hover{
     transform: scale(1.05);
-    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.26);
     transition: all 150ms ease;
 }
 
@@ -116,6 +117,10 @@ h1{
 }
 
 
+.text-ol{
+    color: white;
+    text-shadow: 1px 1px black,-1px -1px black;
+}
 
 
 
@@ -123,9 +128,11 @@ h1{
 /* Main Part */
 
 header{
-    background-color: #e7e7e7;   
+    background-color: #ffffff;   
     height: 470px;
     overflow: hidden;
+    position: relative;
+    z-index: -50;
 }
 
     .headframe{
@@ -133,7 +140,7 @@ header{
         margin: 10px auto;
         height: 100%;
         display: grid;
-        grid-template-columns: 55% 1fr;
+        grid-template-columns: 60% 1fr;
 
         max-width: var(--maxWidth);
 
@@ -145,19 +152,51 @@ header{
         .headframe .left-side{
             /* background-color: blue; */
             overflow: visible;
-          
+            position: relative;
         }
 
-            .headframe .left-side image {
-                transform: translate(-80px,20px);
-                scale: 0.95;
+            .headframe .left-side img {
                 display: block;
+                object-fit: contain;
+
+                position:absolute;
+                width: 800px;
+                height: 420px;
+                left:-82px;
+                top:65px;
+
+                z-index:-100;
+                
             } 
 
         .headframe .right-side{
-            background-color: rgba(255, 0, 0, 0.178);
+            z-index: 100;
+            /* background-color: rgba(255, 0, 0, 0.178); */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+
+            position: relative;
         }
+
+            .title-name{
+                position: relative;
+            }
+            .headframe .right-side .title-name h1:nth-child(2),
+            .headframe .right-side .title-name h1:nth-child(3){
+                    position: absolute;
+                    left: 0%;
+            }
+
+                .title-name h1:nth-child(2){
+                    top: -45px;
+                    opacity: 0.12;
+                    z-index: -10;
+                }
+
+                .title-name h1:nth-child(3){
+                    top: -85px;
+                    opacity: 0.05;
+                    z-index: -20;
+                }
