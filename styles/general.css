@@ -122,7 +122,9 @@ h1{
     text-shadow: 1px 1px black,-1px -1px black;
 }
 
-
+.ignoreMouse{
+    pointer-events: none;
+}
 
 
 /* Main Part */
@@ -132,7 +134,6 @@ header{
     height: 470px;
     overflow: hidden;
     position: relative;
-    z-index: -50;
 }
 
     .headframe{
@@ -147,6 +148,8 @@ header{
         background: url('../images/decor/headerFrame.png');
         background-size: 99%  450px;
         background-repeat: no-repeat;
+        z-index: 100;
+
     }
 
         .headframe .left-side{
@@ -165,12 +168,12 @@ header{
                 left:-82px;
                 top:65px;
 
-                z-index:-100;
+                z-index:50;
                 
             } 
 
         .headframe .right-side{
-            z-index: 100;
+            z-index: 150;
             /* background-color: rgba(255, 0, 0, 0.178); */
             display: flex;
             flex-direction: column;
@@ -200,3 +203,26 @@ header{
                     opacity: 0.05;
                     z-index: -20;
                 }
+
+
+    .header-decor{
+        position: absolute;
+        top: 0;
+        left:0%;
+        width: 100vw;
+        height: 100%;
+    }
+            .header-decor .left,
+            .header-decor .right{
+                position: absolute;
+            }
+
+            .header-decor .left{
+                top: 0;
+                left: 0;
+            }
+
+            .header-decor .right{
+                top: -30px;
+                right: 0%;
+            }
