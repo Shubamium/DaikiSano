@@ -32,6 +32,8 @@ body{
     --darkAccent: #3c3830;
     --darkerAccent: #32342c;
     --accent: #999543;
+
+    --maxWidth: 1400px;
 }
 
 
@@ -47,6 +49,7 @@ li{
 h1{
     font-size: clamp(1vh, 5rem, 5.5rem);
     color:var(--black);
+    line-height: 75%;
 }
 
 .heading, .sub-heading{
@@ -95,6 +98,7 @@ h1{
     
     background-color: var(--accent);
     padding:10px 20px 10px;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -110,3 +114,44 @@ h1{
 .outline{
     border: 2px solid white;
 }
+
+
+
+
+
+
+/* Main Part */
+
+header{
+    background-color: #ffffff;   
+    height: 470px;
+    overflow: hidden;
+}
+
+    .headframe{
+        background-color: white;
+        width: min(1300px, 100%);
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 60% 1fr;
+
+        max-width: var(--maxWidth);
+    }
+
+        .headframe .left-side{
+            /* background-color: blue; */
+            overflow: visible;
+        }
+
+            .headframe .left-side {
+                transform: translate(-50px,10px);
+            } 
+
+        .headframe .right-side{
+            background-color: rgba(255, 0, 0, 0.178);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
