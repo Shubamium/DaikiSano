@@ -16,7 +16,7 @@
 }
 
 body{
-    background-color: var(--darkAccent);
+    background-color: var(--black);
     min-height: 200vh;
 }
 
@@ -56,32 +56,44 @@ li{
 }
 
 h1{
-    font-size: clamp(1vh, 5rem, 5.5rem);
+    font-size: clamp(1vh, 6rem, 5.5rem);
     color:var(--black);
     line-height: 75%;
+    font-family: var(--secondaryFont);
+
 }
 
 .heading, .sub-heading{
     color:white;
     line-height: 90%;
+    font-family: var(--mainFont);
 }
 
 .heading{
-    font-size: clamp(40px, 3rem , 5rem);
+    font-size: clamp(40px, 5rem , 5rem);
 }
 
 .sub-heading{
-    font-size: clamp(40px, 2.5rem , 4rem);
+    font-size: clamp(40px, 4rem , 4rem);
 }
 
 .paragraph{
-    font-size: clamp(10px, 1rem, 70px);
+    font-size: clamp(10px, 1.2rem, 70px);
+    font-weight: 400;
     font-family: var(--secondaryFont);
-    color: rgb(204, 204, 204);
+    color: rgb(175, 175, 175);
     
     line-height: calc(120% + 2px);
     margin-bottom: 10px;
 }
+
+    .indent-slight{
+        text-indent: 3rem;
+    }
+
+    .nowrap{
+        white-space: nowrap;
+    }
 
 .section-number{
     color:transparent;
@@ -90,7 +102,7 @@ h1{
 
     font-weight: 900;
     font-family: var(--secondaryFont);
-    font-size: clamp(20px, 1.7rem, 70px);
+    font-size: clamp(20px, 2.4rem, 70px);
 
     text-transform: uppercase;
 }
@@ -354,3 +366,53 @@ nav{
     .navigation li:hover{
         background-color: #96946C;
     }
+
+
+/* About Section */
+#about{
+    /* min-height: 600px; */
+    margin-top: -100px;
+    padding-top: 100px;
+    max-width: var(--maxWidth);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 55% 1fr;
+
+    position: relative;
+}
+
+    /* Background */
+    #about::before{
+        content: "";
+
+        position: absolute;
+        width: 100vw;
+
+        left: 50%;
+        right: 50%;
+
+        margin-left: -50vw;
+        margin-right: -50vw;
+
+        height: 100%;
+        z-index: -200;
+        background-color: var(--darkAccent);
+    }
+    
+    #about .image {
+        margin-top: -75px;
+    }
+        #about .image img{
+            display: block;
+            height: 100%;
+            /* background-color: red; */
+        }
+        
+    #about .text-part{
+        padding: 50px;
+    }
+
+    #about .text-part p{
+        font-size: 2rem;
+    }
+ 
