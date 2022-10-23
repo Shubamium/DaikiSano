@@ -17,7 +17,8 @@
 
 body{
     background-color: var(--black);
-    min-height: 200vh;
+    min-height: 500vh;
+    overflow-x: hidden;
 }
 
 /* Variables */
@@ -30,6 +31,7 @@ body{
 
     /* Colors */
     --black: #2f2f2f;
+    --grey: #3B3B3B;
     --darkAccent: #3c3830;
     --darkerAccent: #32342c;
     --accent: #999543;
@@ -37,6 +39,13 @@ body{
     --maxWidth: 1400px;
 }
 
+.ta-center{
+    text-align: center;
+}
+
+.ta-right{
+    text-align: right;
+}
 
 /* General Styling */
 a{
@@ -415,4 +424,145 @@ nav{
     #about .text-part p{
         font-size: 2rem;
     }
- 
+
+/* Likes & Hobbies */
+ #likes{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+
+    min-height: 700px;
+    max-width: var(--maxWidth);
+    margin: 0% auto;
+    position: relative;
+    z-index: 0;
+ }
+
+    #likes::before{
+        content: "";
+        background-color: var(--grey);
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        z-index: -100;
+        pointer-events: none;
+        left: 50%;
+        right: 50%;
+
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    #likes .text-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+
+        padding: 20px;
+        
+    }
+
+    #likes .like-nav{
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        align-items: flex-end;
+        overflow-y: hidden;
+        overflow-x: visible;
+        padding:0 20px;
+
+        border-bottom: 7px var(--accent) solid;
+    }
+
+        .like-nav .section-nav{
+            /* background-color: red; */
+            outline: 2px solid white;
+            cursor: pointer;
+            transform: translateY(25%);
+            transition: all 50ms ease;
+            background-size: 120% 500px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .like-nav .section-nav .name{
+            color: white;
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-family: var(--mainFont);
+            font-weight: 700;
+
+            opacity: 0;
+        }
+        
+        .like-nav .section-nav:nth-child(1){
+            height: 70%;
+            border-radius: 10vw 0 0 0 ;
+            background-image: url("../images/picture/ngnl.jpg");
+     
+            background-size: cover;
+            background-position: center;
+
+        }
+        .like-nav .section-nav:nth-child(2){
+            height: 80%;
+            border-radius: 15vw 0 0 0 ;
+            background-image: url("../images/picture/ylia.webp");
+            
+
+        }
+        .like-nav .section-nav:nth-child(3){
+            height: 60%;
+            border-radius: 0 10vw 0 0 ;
+            background-image: url("../images/picture/watamote.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #likes .like-nav .section-nav:hover{
+            transform: translateY(0%);
+            background-color: #1b1f22e8;
+            background-blend-mode: multiply;
+            transition: all 400ms ease;
+        }
+
+        #likes .like-nav .section-nav:hover .name{
+            transform: translateY(30px) scale(1.2);
+            opacity: 1;
+            transition: all 500ms ease;
+
+        }
+
+.background{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -50;
+    
+    left: 50%;
+    right: 50%;
+
+    margin-left: -50vw;
+    margin-right: -50vw;
+    /* background-color: red; */
+    pointer-events: none;
+}
+
+    .streets-bg{
+        overflow-y: hidden;
+        background: linear-gradient(to right, #3B3B3B 0%, rgba(0, 0, 0, 0) 30%, #3B3B3B 80% ),url("../images/background/streets.png");
+        background-size: cover;
+        width: var(--maxWidth);
+        left: -200px;
+        right: 0%;
+        height: 80%;
+        margin-right: inherit;
+        margin-left: inherit;
+        background-position: center;
+        filter: blur(3px);
+        opacity: 0.5;
+    }
