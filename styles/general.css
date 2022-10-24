@@ -704,6 +704,50 @@ nav{
         max-height: 80%;    
     }
 
+/* Favorite Anime Section */
+#anime-fav{
+    max-width: var(--maxWidth);
+    margin: 0% auto;
+    padding: 20px;
+}
+
+    #anime-fav .container{
+        border: 40px solid #474747;
+        outline: -10px solid #474747;
+
+        display: grid;
+        grid-template-columns: 35% 1fr;
+        gap: 5em;
+        padding:80px 60px;
+    }
+
+    #anime-fav .text-part{
+        padding-top: 50px;
+    }
+
+    #anime-fav .sub-heading span{
+        color:#02B7EC;
+    }
+
+    #anime-fav .paragraph{
+        border: 3px solid white;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    #anime-fav .rating{
+       background-color: var(--accent);
+       padding: 10px;
+       color: white;
+       font-size: 3rem;
+       font-weight: bolder;
+       display: inline-block;
+    }
+
+    #anime-fav .container img{
+        max-width: 100%;
+        outline: 4px solid white;
+    }
 .background{
     position: absolute;
     width: 100vw;
