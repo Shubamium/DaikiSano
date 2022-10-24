@@ -669,6 +669,40 @@ nav{
         padding: 20px 0 10px;
     }
 
+/* Anime Section */
+
+#anime{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    /* background-color: red; */
+
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    position: relative;
+}
+
+    #anime .text-part{
+        /* display: flex;
+        justify-content: center;
+        flex-direction: column; */
+
+        padding: calc(4em + 100px) 50px;
+    }
+
+        #anime .text-part .heading{
+            opacity: .7;
+        }
+
+    #anime .image{
+      display: grid;
+      place-items: center;
+    }
+
+    #anime .image img{
+        display: block;
+        max-width: 80%;    
+        max-height: 80%;    
+    }
 
 .background{
     position: absolute;
@@ -714,11 +748,25 @@ nav{
         background-color: #2C2C2C;
     }
 
+    .grey{
+        background-color: var(--grey);
+    }
+
     .osu{
         background-image: url('../images/background/osu-bg.png');
         /* mix-blend-mode: overlay; */
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .takt{
+        background-image: url('../images/background/takt.jpg');
+        background-size: cover;
+        background-position: center;
+        mix-blend-mode: overlay;
+
+        opacity: .9;
+        /* filter: blur(3px); */
     }
 
