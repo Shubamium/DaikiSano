@@ -537,6 +537,71 @@ nav{
 
         }
 
+
+
+/* Like Section */
+#music{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    position: relative;
+    padding:100px;
+}
+
+    #music .text-part{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .musics{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .songs-row{
+        display: flex;
+        justify-content: center;
+        /* width: 100%; */
+        /* gap: 1em;  */
+    }
+
+    .song{
+        /* max-width: 450px; */
+        /* width: 400px; */
+        min-width:250px;
+        /* background: rgb(48, 255, 110); */
+    }
+
+        .song img{
+            display: block;
+            /* border-radius: 100%; */
+            aspect-ratio: 1/1;
+            /* width: 100%; */
+            margin: 0 auto;
+            object-fit: contain;
+        }
+    
+        .song .name{
+            color: white;
+            padding-top: 10px;
+
+            font-family: var(--altFont);
+            text-shadow: 1px 1px black;
+            font-weight: bold;
+            font-size: large;
+            white-space: nowrap;
+            text-align: center;
+            /* min-width: 150px; */
+        }
+    
 .background{
     position: absolute;
     width: 100vw;
@@ -566,3 +631,10 @@ nav{
         filter: blur(3px);
         opacity: 0.5;
     }
+
+    .sky{
+        background: linear-gradient(270deg, #3B3B3B 48.02%, rgba(0, 0, 0, 0.3) 86.38%, #3B3B3B 99.69%), url('../images/picture/sky.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
