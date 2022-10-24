@@ -17,7 +17,7 @@
 
 body{
     background-color: var(--black);
-    min-height: 500vh;
+    min-height: 900vh;
     overflow-x: hidden;
 }
 
@@ -630,6 +630,46 @@ nav{
          color: #8FDDFF;
     }
  
+
+/* Osu Section */
+#game-osu{
+    margin: 0 auto;
+    max-width: var(--maxWidth);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+    /* background-color: red; */
+    
+    padding: 140px 0;
+    position: relative;
+}
+    #game-osu .image {
+        display: grid;
+        place-items: center;
+         padding: 10px;
+    }
+
+    #game-osu .image img{
+        display: block;
+        max-width: 100%;
+        max-height:100%;
+        margin: 0 auto;
+    }
+
+    #game-osu .text-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #game-osu .text-part .skin-name{
+        color: white;
+        font-size: 2.2rem;
+        padding: 20px 0 10px;
+    }
+
+
 .background{
     position: absolute;
     width: 100vw;
@@ -668,5 +708,17 @@ nav{
 
     .mild-accent{
         background-color: #3C3830;
+    }
+
+    .dark-accent{
+        background-color: #2C2C2C;
+    }
+
+    .osu{
+        background-image: url('../images/background/osu-bg.png');
+        /* mix-blend-mode: overlay; */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
