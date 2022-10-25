@@ -834,10 +834,13 @@ nav{
     /* padding:200px 0; */
     position: relative;
     --padding:7em;
+    border-top: 15px solid white;
+
 }
 
     #friends .text-part{
         padding-top: var(--padding);
+        
     }
 
     #friends .tomo{
@@ -1118,7 +1121,6 @@ footer{
     }
 
     .sky-alt{
-        border-top: 15px solid white;
         background-image: url('../images/background/sky-alt.jpg');
         background-position: bottom;
         background-size: cover;
