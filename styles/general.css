@@ -852,6 +852,11 @@ nav{
         filter: drop-shadow(4px 2px 2px rgba(255, 28, 206, 0.158));
     }  
 
+
+        #friends .friend img{
+            height: 180px;
+        }
+
         #friends .friend .tag{
             font-size: 1rem;
             font-weight: lighter;
@@ -906,9 +911,9 @@ nav{
     .sky-alt{
         border-top: 15px solid white;
         background-image: url('../images/background/sky-alt.jpg');
-        background-position: center;
+        background-position: bottom;
         background-size: cover;
-        opacity: .8;
+        filter: brightness(.5);
     }
 
     .mild-accent{
