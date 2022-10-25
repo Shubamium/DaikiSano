@@ -1011,6 +1011,32 @@ nav{
             font-weight: lighter;
         }
 
+#banner{
+    background-color: red;
+    /* min-height: 200vh; */
+    padding: 200px 0;
+}
+
+    #banner .small, #banner .big{
+        background: url('../images/background/ytbanner.png');
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    #banner .small{
+        height: 56px;
+        margin: 5em 0;
+        width: 100vw;
+        /* background-color: green; */
+    }
+    
+    #banner .big{
+        height: 320px;
+        margin: 200px 0;
+        width: 100vw;
+        /* background-color: rgb(128, 41, 0); */
+    }
+
+
 .background{
     position: absolute;
     width: 100vw;
