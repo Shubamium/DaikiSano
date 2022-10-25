@@ -17,7 +17,7 @@
 
 body{
     background-color: var(--black);
-    min-height: 900vh;
+    min-height: 1900vh;
     overflow-x: hidden;
 }
 
@@ -724,7 +724,9 @@ nav{
     #anime-fav .text-part{
         padding-top: 50px;
     }
-
+    #anime-fav .sub-heading {
+        font-size: 3.5rem;
+    }
     #anime-fav .sub-heading span{
         color:#02B7EC;
     }
@@ -748,6 +750,82 @@ nav{
         max-width: 100%;
         outline: 4px solid white;
     }
+
+/* Anime 3 x 3 Section */
+#anime-three{
+    max-width: var(--maxWidth);
+    margin:200px auto 50px;
+    position: relative;
+}
+ 
+
+    #anime-three .three{
+        /* min-height: 800px; */
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 500px;
+        margin: 50px auto 0;
+    }
+
+    #anime-three .three .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    #anime-three .anime{
+        width: 120px;
+        background-color: green;
+        aspect-ratio:14/18;
+        /* outline: 5px solid white; */
+    }
+
+    #anime-three .anime img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        filter: drop-shadow(5px 5px 0px #0000005d);
+    }
+
+    #anime-three .anime-small{
+        width: 105px;
+    }
+
+    #anime-three .section-number{
+        font-size: 1.4rem;
+    }
+
+    #anime-three .sub-heading{
+        font-size: 2.3rem;
+    }
+    
+    #anime-three .paragraph{
+        padding-top: 20px;
+        font-size: .9rem;
+        max-width: 50ch;
+        margin: 0% auto;
+    }
+
+    #anime-three .decor{
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+
+        display: block;
+        /* background-color: red; */
+        /* top: clamp(20%, 50px, 4rem); */
+        /* padding-top: ; */
+        pointer-events: none;
+        opacity: .6;
+        top: 70px;
+        left: 0;
+        z-index: -100;
+        transform: scale(120%);
+    }
+
 .background{
     position: absolute;
     width: 100vw;
