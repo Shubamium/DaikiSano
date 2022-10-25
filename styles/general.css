@@ -719,6 +719,8 @@ nav{
         grid-template-columns: 35% 1fr;
         gap: 5em;
         padding:80px 60px;
+       transform: scale(.7);
+
     }
 
     #anime-fav .text-part{
