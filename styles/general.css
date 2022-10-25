@@ -17,7 +17,6 @@
 
 body{
     background-color: var(--black);
-    min-height: 1900vh;
     overflow-x: hidden;
 }
 
@@ -1012,7 +1011,7 @@ nav{
         }
 
 #banner{
-    background-color: red;
+    /* background-color: red; */
     /* min-height: 200vh; */
     padding: 200px 0;
 }
@@ -1036,6 +1035,49 @@ nav{
         /* background-color: rgb(128, 41, 0); */
     }
 
+
+footer{
+    background-color: #1B1F22;
+    min-height: 80vh;
+    text-align: center;
+    padding: 120px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.616);
+}
+    footer i{
+        color: #02B7EC ;
+    }
+
+    footer .return-btn{
+        font-size: 2.3rem;
+        background-color: var(--accent);
+        padding:13px 20px;
+        display: inline-block;
+        margin: 20px 0 ;
+    }
+        footer .return-btn:hover{
+            transform: scale(1.02);
+            transition: all 250ms ease;
+        }
+        .return-btn i{
+            color: var(--black);
+        }
+
+    footer .text-part a{
+        color: #02B7EC;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    footer .text-part .title{
+        color: white;
+        font-size: 2.8rem;
+        font-weight: bolder;
+    }
+
+    footer .text-part .creator{
+        font-weight: lighter;
+    }
 
 .background{
     position: absolute;
