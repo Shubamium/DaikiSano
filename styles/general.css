@@ -13,6 +13,7 @@
   
   /* Default Font */
   font-family: var(--mainFont);
+  scroll-behavior: smooth;
 }
 
 body{
