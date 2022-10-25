@@ -34,7 +34,7 @@
                     <p>ダイキ</p>
                     <div class="line"></div>
                 </div>
-                <button class="btn" onclick="document.getElementById('about').scrollIntoView();">More <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="btn" onclick="scrollToId('about');">More <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
 
@@ -79,9 +79,9 @@
 
             <!-- Navigation -->
             <div class="like-nav">
-                <div class="section-nav ta-center"><p class="name">Game <br><i class="fa-solid fa-gamepad"></i></p></div>
-                <div class="section-nav ta-center"><p class="name">Music <br><i class="fa-solid fa-music"></i></p></div>
-                <div class="section-nav ta-center"><p class="name">Social<br><i class="fa-solid fa-share-nodes"></i></p></div>
+                <div class="section-nav ta-center" onclick="scrollToId('game-general');"><p class="name">Game <br><i class="fa-solid fa-gamepad"></i></p></div>
+                <div class="section-nav ta-center" onclick="scrollToId('music');"><p class="name">Music <br><i class="fa-solid fa-music"></i></p></div>
+                <div class="section-nav ta-center" onclick="scrollToId('contact');"><p class="name">Social<br><i class="fa-solid fa-share-nodes"></i></p></div>
             </div>
 
             <!-- Text Part -->
@@ -100,17 +100,17 @@
             <!-- Music Section -->
             <div class="musics">
                 <div class="songs-row">
-                    <div class="song">
+                    <div class="song" onclick="window.open('https://open.spotify.com/track/5SuOikwiRyPMVoIQDJUgSV?si=8061385b11a04a13&nd=1');">
                         <img src="images/picture/anya.png" alt="anya">
                         <p class="name"><i class="fa-solid fa-music"></i> Gen Hoshino - Comedy</p>
                     </div>
 
-                    <div class="song">
+                    <div class="song" onclick="window.open('https://open.spotify.com/track/0VPkaJMRQIhYWXiE1LqaCK?si=4dd652912c25444d');">
                         <img src="images/picture/jiro.png" alt="kyoka jiro">
                         <p class="name"><i class="fa-solid fa-music"></i> Kyoka Jiro (CV. Chrissy<br> Constanza) - Hero Too</p>
                     </div>
 
-                    <div class="song">
+                    <div class="song" onclick="window.open('https://open.spotify.com/track/44VYdLnwvhn1H1cfieb84a?si=aafc2cac32bf4717');">
                         <img src="images/picture/tora.png" alt="tora">
                         <p class="name"><i class="fa-solid fa-music"></i> Eve - Shinkai</p>
                     </div>
@@ -119,12 +119,12 @@
 
                 <div class="songs-row">
 
-                    <div class="song">
+                    <div class="song" onclick="window.open('https://open.spotify.com/track/4BE1OloRc9xwjyqA4wFFuN?si=c90e3c1c6eef4b05');">
                         <img src="images/picture/yume.png" alt="yoasobi">
                         <p class="name"><i class="fa-solid fa-music"></i> YOASOBI - Ano Yume<br> Wo Nazotte</p>
                     </div>
 
-                    <div class="song">
+                    <div class="song" onclick="window.open('https://open.spotify.com/track/15St0qWPnH4xKflV39vk28?si=da0e95f3df6c406e');">
                         <img src="images/picture/tonikaw.png" alt="tonikawa">
                         <p class="name"><i class="fa-solid fa-music"></i> Yunomi - Koi No Uta</p>
                     </div>
@@ -264,13 +264,13 @@
                 <h3 class="sub-heading">Contacts</h3>
                 <p class="paragraph"> You can contact me here:</p>
                 <div id="contact-cards">
-                    <div class="contact-card">
+                    <div class="contact-card" onclick="window.open('https://discord.gg/6Hfy2MbUAT');">
                         <p class="text"><i class="fa-brands fa-discord"></i>DaikiSano#1728</p>
                     </div>
-                    <div class="contact-card">
+                    <div class="contact-card" onclick="window.open('https://www.youtube.com/channel/UCaC-kRLqXJxFhfH8y2xAaLA');">
                         <p class="text">Daiki <i class="fa-brands fa-youtube"></i> </p>
                     </div>
-                    <div class="contact-card flex-end">
+                    <div class="contact-card flex-end" onclick="window.open('https://discord.gg/6Hfy2MbUAT');">
                         <p class="top-text">Toast</p>
                         <div class="bottom-text">Join My Discord Server <i class="fa-solid fa-up-right-from-square"></i></div>
                     </div>
@@ -301,5 +301,7 @@
                 <p class="links"><i class="fa-solid fa-envelope"></i> liusvinv@gmail.com 🞄 <a href="https://github.com/Shubamium" target="_blank"><i class="fa-brands fa-github"></i> Github </a></p>
             </div>
     </footer>
+
+    <script src="scripts/scrollById.js"></script>
 </body>
 </html>

@@ -578,7 +578,33 @@ nav{
         /* width: 400px; */
         min-width:250px;
         /* background: rgb(48, 255, 110); */
+        cursor: pointer;
+        position: relative;
     }
+
+        .song:hover img{
+            filter: brightness(.4);
+            transition: all 250ms ease;
+
+        }
+        .song:hover p{
+            color: #02B7EC;
+            transition: all 350ms;
+        }
+/* 
+        .song:hover::before{
+            content:'Listen';
+
+            color: white;
+            font-size: 2rem;
+            font-weight: bolder;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            z-index: 100;
+            opacity: 1;
+            transition: all 300ms ease;
+        } */
 
         .song img{
             display: block;
