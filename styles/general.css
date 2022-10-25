@@ -941,6 +941,8 @@ nav{
             justify-content: space-around;
             align-items: center;
             flex-direction: column;
+            transition: background-position 150ms ease-out;
+
 
         }
 
