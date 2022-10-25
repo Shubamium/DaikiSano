@@ -831,7 +831,7 @@ nav{
 
 #friends{
     max-width: var(--maxWidth);
-    margin: 200px auto;
+    margin: 200px auto 0;
     /* padding:200px 0; */
     position: relative;
     --padding:7em;
@@ -871,6 +871,145 @@ nav{
         -webkit-text-stroke-color: white;
     }
 
+/* Contact Section */
+#contact{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    position: relative;
+    /* height: 300px; */
+}
+
+    #contact .text-part{
+        padding-top: 10px;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+        #contact .text-part .section-number{
+            -webkit-text-stroke-color: white;
+
+        }
+        #contact .text-part .paragraph{
+            text-indent: 2rem;
+        }
+
+    #contact .image{
+        /* background-color: green; */
+        height: 500px;
+    }
+        
+        #contact .image img{
+            height: 100%;
+        }
+
+    #contact-cards{
+        /* background-color: red; */
+        height: 100%;
+        position: relative;
+        left: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:2em;
+    }
+
+    #contact-cards .contact-card{
+        min-width: 200px;
+        height: 100%;
+        aspect-ratio: 2/3;
+        background-color: var(--black);
+        border-radius: 2vmin;
+        border: 1px solid white;
+        overflow: hidden;
+        cursor:pointer;
+
+    }
+        .contact-card{
+            /* background-color: #4158D0; */
+            background-image: linear-gradient(120deg, transparent 30%, #41afd0 50%, #c8bc50 90%, #c6db4d 120%);
+
+            /* background-color: red; */
+            background-position: -10% -10%;
+            background-size: 300% 300%;
+            background-repeat: no-repeat;
+            position: relative;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .contact-card::before{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            /* background-color: red;/ */
+            background: radial-gradient(circle, rgba(255,255,255,1) 6%, rgba(255,255,255,0) 6%);
+            /* background-repeat: repeat; */
+            background-size: 3vmin 3vmin;
+            /* background-attachment: fixed; */
+            background-position: 0% 0%;
+            opacity: .3;
+            transition: all 250ms ease;
+
+            pointer-events: none;
+        }
+        
+        .contact-card:hover::before{
+            background-position: -10% -10%;
+            transition: all 250ms ease;
+            opacity: .85;
+
+        }
+
+        .contact-card:hover{
+            background-position: 100% 100%;
+            transform:translate3d(0px, -2px , 20px);
+            transition: background-position 500ms ease-out;
+
+        }
+
+
+        .contact-card .text{
+            color:white;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+       
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .contact-card .bottom-text{
+            color: white;
+            text-align: left;
+            /* background-color: red; */
+            font-size: 2rem;
+            font-weight: bolder;
+            padding: .3em;
+            /* height: 100%; */
+            /* justify-self: flex-end; */
+            
+        }
+        
+        .contact-card .top-text{
+            padding: .1em;
+            color: white;
+            text-align: right;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-weight: lighter;
+        }
 
 .background{
     position: absolute;
@@ -914,6 +1053,8 @@ nav{
         background-position: bottom;
         background-size: cover;
         filter: brightness(.5);
+
+        background-attachment: fixed;
     }
 
     .mild-accent{
@@ -944,5 +1085,12 @@ nav{
 
         opacity: .9;
         /* filter: blur(3px); */
+    }
+    .dark-left{
+        background-color: #292929;
+    }
+    .accent-right{
+        background-color: var(--accent);
+        transform: translateX(60%);
     }
 
