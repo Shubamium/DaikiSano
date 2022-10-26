@@ -1341,7 +1341,14 @@ footer{
         height: 100%;
     }
     
-    
+
+    #game-osu .sub-heading{
+        font-size: 3.2rem;
+    }
+
+        #game-osu .text-part .skin-name{
+            font-size:1rem;
+        }
 }
 
 @media screen and (max-width:900px){
