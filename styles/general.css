@@ -779,6 +779,91 @@ nav{
         outline: 4px solid white;
     }
 
+
+/* Best Girl Section */
+#anime-best{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    /* background-color: red; */
+    height: 1000px;
+    transform: scale(.9);
+
+}
+
+    #anime-best .sub-heading{
+        font-size: 2.3rem;
+    }
+    #anime-best .section-number{
+        font-size: 1.3rem;
+    }
+    
+    .char-cards{
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+        padding: 10px;
+
+
+    }
+
+    .char-cards .card{
+        height: 600px;
+        width: 250px;
+        /* background-color: blue; */
+        outline: 4px solid white;
+        background-color: #49432869;
+        transition: all 400ms ease;
+
+    }
+
+    .char-cards .card img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .char-cards .card p{
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .char-cards .card .name{
+        /* text-decoration: underline; */
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--accent);
+    }
+
+    .char-cards .card .source{
+        font-weight: lighter;
+        font-size: .7rem;
+        font-family: var(--secondaryFont);
+    }
+
+    .char-cards:hover .card{
+        width: 100px;
+        filter: brightness(.5);
+        transform: all 400ms ease;
+    }
+    
+
+
+    .char-cards .card:hover{
+        width:500px;
+        filter: brightness(1);
+        transition: all 400ms ease-out;
+    }
+    .char-cards .card:hover .name{
+        transform: translateX(-5px);
+        font-size: 1.5rem;
+        transition: all 550ms;
+    }
+
+
 /* Anime 3 x 3 Section */
 #anime-three{
     max-width: var(--maxWidth);
