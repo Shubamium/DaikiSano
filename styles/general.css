@@ -912,12 +912,16 @@ nav{
         justify-content: center;
         gap: 2em;
     }
+    
 
     #anime-three .anime{
         width: 120px;
-        background-color: green;
+        /* background-color: green; */
         aspect-ratio:14/18;
         /* outline: 5px solid white; */
+        /* position: relative;/ */
+        position: relative;
+        cursor:pointer;
     }
 
     #anime-three .anime img{
@@ -925,7 +929,37 @@ nav{
         height: 100%;
         display: block;
         filter: drop-shadow(5px 5px 0px #0000005d);
+        cursor: ;
     }
+    
+        #anime-three .anime .name{
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: .8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: red; */
+            visibility: collapse;
+
+            padding: 10px;
+            font-family: var(--secondaryFont);
+        }
+        
+        #anime-three .anime:hover img{
+             filter: drop-shadow(5px 5px 0px #0000005d) brightness(.3);
+             transition: all 250ms ease;
+             transform: scale(1.05) rotateZ(-2deg);
+        }
+
+        #anime-three .anime:hover .name{
+            visibility: visible;
+        }
 
     #anime-three .anime-small{
         width: 105px;
