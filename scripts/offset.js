@@ -17,7 +17,7 @@ window.addEventListener("mousemove", (e)=> {
 
 function applyEffect(element, offsetX, offsetY){
 
-    console.log(element);
+    // console.log(element);
     offsetX *= 'offset' in element.dataset ? element.dataset.offset: moveFactor;
     offsetY *= 'offset' in element.dataset ? element.dataset.offset: moveFactor;
     
