@@ -371,9 +371,12 @@ nav{
     }
     .navigation li:hover a{
         color: var(--darkAccent);
+        transition: all 250ms ease;
+
     }
     .navigation li:hover{
         background-color: #96946C;
+        transition: all 250ms ease;
     }
 
 
