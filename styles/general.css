@@ -18,6 +18,9 @@
 
 body{
     background-color: var(--black);
+}
+
+.container{
     overflow-x: hidden;
 }
 
@@ -1321,7 +1324,7 @@ footer{
 }
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1024px){
     
     #likes{
         display: flex;
@@ -1344,12 +1347,28 @@ footer{
 @media screen and (max-width:900px){
     
    #music{
-    display: flex;
-    flex-direction: column-reverse;
+     display: flex;
+     flex-direction: column-reverse;
    }
 
-   #music .text-part{
-    text-align: center;
+        #music .text-part{
+            text-align: center;
+        }
+
+   #game-general{
+        grid-template-columns: 60% 1fr;
    }
+
+    #game-general .image{
+            position: relative;
+            right: 400px;
+            z-index: -50;
+            opacity: .2;
+            filter: blur(4px);
+    }
+    #game-general .text-part img{
+        width: 130%;
+    }
+    
     
 }
