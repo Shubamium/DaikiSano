@@ -1300,7 +1300,7 @@ footer{
     }
 
     #about{
-        grid-template-columns: 40% 1fr;
+        grid-template-columns: 45% 1fr;
     }
         #about .image{
             z-index: -10;
@@ -1309,4 +1309,24 @@ footer{
         #about .text-part .paragraph{
             font-size: 1rem;
         }
+}
+
+
+@media screen and (max-width:1000px){
+    
+    #likes{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #likes .like-nav{
+        height: 600px;
+        margin: -200px auto 0;
+        max-width: 80%;
+    }
+
+    #likes .streets-bg{
+        height: 100%;
+    }
+    
 }
