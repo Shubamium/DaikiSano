@@ -751,18 +751,29 @@ nav{
         grid-template-columns: 35% 1fr;
         gap: 5em;
         padding:80px 60px;
-       transform: scale(.7);
+       /* transform: scale(.7); */
+
+       width: min(80%, var(--maxWidth) );
+       height: 80%;
+       margin: 0 auto;
 
     }
 
     #anime-fav .text-part{
         padding-top: 50px;
     }
-    #anime-fav .sub-heading {
-        font-size: 3.5rem;
+
+    #anime-fav .section-number {
+        font-size: 1.5rem;
     }
+
+    #anime-fav .sub-heading {
+        font-size: 2.5rem;
+    }
+
     #anime-fav .sub-heading span{
         color:#02B7EC;
+        display: inline-block;
     }
 
     #anime-fav .paragraph{
@@ -1321,6 +1332,15 @@ footer{
         #music .musics{
             transform: scale(.8);
         }
+
+    #anime-fav .section-number {
+        font-size: 1.5rem;
+    }
+        #anime-fav .paragraph{
+            border: 3px solid white;
+            padding: 1em;
+            margin: 1em 0;
+        }
 }
 
 
@@ -1349,6 +1369,16 @@ footer{
         #game-osu .text-part .skin-name{
             font-size:1rem;
         }
+
+    #anime-fav .container {
+        grid-template-columns: inherit;
+        gap: initial;
+    }
+
+    #anime-fav .container img {
+        max-height: 400px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width:900px){
