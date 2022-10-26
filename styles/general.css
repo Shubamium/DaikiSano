@@ -929,7 +929,7 @@ nav{
         height: 100%;
         display: block;
         filter: drop-shadow(5px 5px 0px #0000005d);
-        cursor: ;
+        cursor: pointer;
     }
     
         #anime-three .anime .name{
