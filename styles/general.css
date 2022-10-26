@@ -1309,6 +1309,15 @@ footer{
         #about .text-part .paragraph{
             font-size: 1rem;
         }
+
+    #music{
+        padding: 10px;
+        grid-template-columns: 70% 1fr;
+    }
+
+        #music .musics{
+            transform: scale(.8);
+        }
 }
 
 
@@ -1328,5 +1337,19 @@ footer{
     #likes .streets-bg{
         height: 100%;
     }
+    
+    
+}
+
+@media screen and (max-width:900px){
+    
+   #music{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+   #music .text-part{
+    text-align: center;
+   }
     
 }
