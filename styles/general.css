@@ -824,6 +824,13 @@ nav{
         object-fit: cover;
         object-position: center;
     }
+    .char-cards .card:last-child img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
 
     .char-cards .card p{
         color: white;
