@@ -1285,3 +1285,25 @@ footer{
         transform: translateX(60%);
     }
 
+/* Media Queries */
+@media screen and (max-width:1300px) {
+
+    .heading{
+        font-size: 3rem;
+    }
+    
+    .paragraph{
+        font-size: 1.2rem;
+    }
+
+    #about{
+        grid-template-columns: 40% 1fr;
+    }
+        #about .image{
+            z-index: -10;
+        }
+
+        #about .text-part .paragraph{
+            font-size: 1rem;
+        }
+}
