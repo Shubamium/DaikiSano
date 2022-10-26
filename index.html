@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="icon" href="images/icon/main.ico">
     <script src="https://kit.fontawesome.com/bb83019d49.js" crossorigin="anonymous"></script>
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+
+    <script>
+          AOS.init();
+    </script>
+
     <!-- Header -->
     <header id="home">
         <div class="headframe">
-            <div class="left-side">
+            <div class="left-side" data-aos="fade-up">
                 <img src="images/transparent/sinon-hq.png" alt="sinon">
             </div>
             <div class="right-side">
@@ -40,8 +48,12 @@
 
         <!-- Decor -->
         <div class="header-decor ignoreMouse">
+           <div data-aos="fade-right">
             <img src="images/decor/left-edge.svg" class="left ignoreMouse">
-            <img src="images/decor/right-edge.svg" class="right ignoreMouse">
+           </div>
+           <div data-aos="fade-left">
+               <img src="images/decor/right-edge.svg" class="right ignoreMouse">
+           </div>
         </div>
         
      
