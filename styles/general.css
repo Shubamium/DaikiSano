@@ -1289,7 +1289,7 @@ footer{
 
     .streets-bg{
         overflow-y: hidden;
-        background: linear-gradient(to right, #3B3B3B 0%, rgba(0, 0, 0, 0) 30%, #3B3B3B 80% ),url("../images/background/streets.png");
+        background: linear-gradient(to right, #3B3B3B 0%, rgba(0, 0, 0, 0) 30%, #3B3B3B 80% ),url("../images/background/streets.webp");
         background-size: cover;
         width: var(--maxWidth);
         left: -200px;
@@ -1309,7 +1309,7 @@ footer{
     }
 
     .sky-alt{
-        background-image: url('../images/background/sky-alt.jpg');
+        background-image: url('../images/background/sky-alt.webp');
         background-position: bottom;
         background-size: cover;
         filter: brightness(.5);
@@ -1338,7 +1338,7 @@ footer{
     }
 
     .takt{
-        background-image: url('../images/background/takt.jpg');
+        background-image: url('../images/background/takt.webp');
         background-size: cover;
         background-position: center;
         mix-blend-mode: overlay;
@@ -1429,6 +1429,7 @@ footer{
 
     #anime-fav .container img {
         max-height: 400px;
+        display: block;
         margin: 0 auto;
     }
 }
