@@ -696,7 +696,8 @@ nav{
     #game-osu .image {
         display: grid;
         place-items: center;
-         padding: 10px;
+         padding: 10px 50px;
+         max-height: 500px;
     }
 
     #game-osu .image img{
@@ -711,6 +712,7 @@ nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding:20px;
     }
 
     #game-osu .text-part .skin-name{
