@@ -63,6 +63,12 @@ a{
 
 }
 
+.icons a i{
+    transform: translateX(0px);
+    transition: all 250ms ease;
+
+}
+
 li{
     list-style-type:none;
 }
@@ -371,6 +377,7 @@ nav{
 
         text-transform: uppercase;
         white-space: nowrap;
+
     }
     .navigation li:hover a{
         color: var(--darkAccent);
@@ -536,8 +543,13 @@ nav{
             transition: all 400ms ease;
         }
 
+        #likes .like-nav .section-nav{
+            transition: all 400ms ease;
+        }
+
+
         #likes .like-nav .section-nav:hover .name{
-            transform: translateY(30px) scale(1.12);
+            transform: translateY(40px);
             opacity: 1;
             transition: all 500ms ease;
 
@@ -661,6 +673,12 @@ nav{
     #game-general .text-part a{
          color: #8FDDFF;
     }
+    #game-general .text-part a:hover{
+        color: #c1ecff;
+        display: block;
+        transform: translateX(10px);
+        transition: all 250ms ease;
+   }
  
 
 /* Osu Section */
