@@ -437,6 +437,14 @@ nav{
     #about .text-part p{
         font-size: 2rem;
     }
+    #about .gun{
+        opacity: .9;
+        position: absolute;
+        bottom: 0;
+        left:-10%;
+        bottom: -18%;
+        z-index: 100;
+    }
 
 /* Likes & Hobbies */
  #likes{
@@ -1369,6 +1377,7 @@ footer{
 
     #about{
         grid-template-columns: 45% 1fr;
+        position: relative;
     }
         #about .image{
             z-index: -10;
@@ -1377,6 +1386,8 @@ footer{
         #about .text-part .paragraph{
             font-size: 1rem;
         }
+
+    
 
     #music{
         padding: 10px;
